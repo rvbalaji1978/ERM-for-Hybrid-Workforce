@@ -1,123 +1,104 @@
-ERM for Hybrid Workforce 👥
+# ERM for Hybrid Workforce 💼
 
-License: MIT
-Salesforce DX Status: In Development
-Organization: TCS SmartBridge
+**License:** MIT  
+**Salesforce DX Status:** In Development  
+**Organization:** TCS SmartBridge  
 
-A Salesforce-powered ecosystem digitizing employee engagement and hybrid workforce management. This platform connects employees, managers, HR, and leadership to streamline scheduling, feedback, and engagement, improving productivity, retention, and overall employee experience.
+A Salesforce-powered ecosystem designed to **digitize employee engagement, streamline hybrid work management, and improve workforce productivity and retention**. This platform connects employees, managers, HR, and leadership to create a more efficient, data-driven, and employee-centric workplace.
 
-Table of Contents
+---
 
-Problem Statement
+## Table of Contents
+- [Problem Statement](#problem-statement)  
+- [Our Solution](#our-solution)  
+- [Key Features (Phase 1)](#key-features-phase-1)  
+- [Technology Stack](#technology-stack)  
+- [Getting Started](#getting-started)  
+- [Repository Structure](#repository-structure)  
+- [Project Context](#project-context)  
 
-Our Solution
+---
 
-Key Features (Phase 1)
+## Problem Statement
+Companies with hybrid workforces face challenges in maintaining engagement, ensuring well-being, and monitoring productivity. Employees working remotely or on flexible schedules often feel disconnected, while managers struggle to track team performance, work schedules, and engagement. Disparate systems for surveys, scheduling, and HR management lead to inefficiencies, low morale, and increased attrition risk.
 
-Technology Stack
+---
 
-Getting Started
+## Our Solution
+**ERM for Hybrid Workforce** is a Salesforce-based platform that provides a **central hub for all employee interactions**.
 
-Repository Structure
+**For Employees:**  
+- Access a mobile-friendly portal to manage schedules, provide real-time feedback, and access company resources.
 
-Project Context
+**For Managers:**  
+- Monitor team engagement, view schedules, track sentiment trends, and respond to feedback proactively.
 
-Problem Statement
+**For HR & Leadership:**  
+- Analyze organization-wide engagement trends, optimize hybrid scheduling, and make data-driven workforce decisions.
 
-Organizations with hybrid workforces face challenges in maintaining cohesive company culture, tracking employee well-being, and managing remote/office schedules. Disconnected tools for performance reviews, team communication, and scheduling create silos, leading to employee disengagement, burnout, and reduced productivity.
+---
 
-Managers and HR struggle to gain real-time insights into workforce sentiment, making proactive engagement and retention strategies difficult.
+## Key Features (Phase 1)
+- 🗓 **Hybrid Scheduling Module:** Employees can log office and remote days; managers view consolidated team schedules.  
+- 📊 **Analytics & Dashboards:** Real-time reporting on engagement, attrition risks, and productivity trends.  
+- 📝 **Real-Time Feedback Collection:** Pulse surveys with AI-driven sentiment analysis to identify engagement issues.  
+- 🔔 **Automated Alerts & Notifications:** Reminders for surveys, 1:1 meetings, and HR follow-ups.  
+- 📚 **Knowledge Base:** Central repository for policies, onboarding resources, and FAQs.  
+- 🤖 **Intelligent Automation:** Flows and triggers automate feedback analysis, notifications, and escalations.  
 
-Our Solution
+---
 
-ERM for Hybrid Workforce is a holistic Salesforce-based platform that addresses these challenges by centralizing all employee interactions.
+## Technology Stack
+- **Core Platform:** Salesforce Lightning Platform  
+- **UI:** Lightning Web Components (LWC) & Experience Cloud  
+- **Backend Logic:** Apex (Triggers, Schedulable, Asynchronous)  
+- **Automation:** Salesforce Flow & Approval Processes  
+- **Analytics:** Tableau CRM (Einstein Analytics) for dashboards and reporting  
+- **DevOps:** Salesforce DX, VS Code, Git & GitHub  
+- **AI/ML:** Einstein AI for sentiment analysis of feedback  
 
-For Employees: A simple, mobile-first interface to manage schedules, provide feedback, and access resources.
+---
 
-For Managers: Tools to monitor team engagement, plan hybrid schedules, and resolve issues proactively.
+## Getting Started
+Follow these instructions to get a copy of the project running in your Salesforce environment for development and testing purposes.
 
-For HR & Leadership: Real-time dashboards to track engagement trends, attrition risk, and workforce productivity.
+### Prerequisites
+- Salesforce CLI  
+- Visual Studio Code with Salesforce Extension Pack  
+- Salesforce Developer Edition Org or Sandbox  
 
-Key Features (Phase 1)
-
-📅 Hybrid Scheduling Management: Employees log office/remote days; managers see consolidated schedules for team planning.
-
-📝 Real-Time Feedback Collection: Pulse surveys with automated sentiment analysis and alerts for negative trends.
-
-🔔 Automated Notifications: Reminders for surveys, 1:1 meetings, and HR actions.
-
-📚 Knowledge Base & Resources: Centralized policies, onboarding materials, and FAQs accessible via portal.
-
-📊 Analytics Dashboards: Real-time insights on engagement, productivity, and attrition risk.
-
-🤖 Sentiment Analysis: Einstein AI evaluates employee feedback to highlight critical trends.
-
-🔗 Integrations: Slack/Teams, Outlook/Google Calendar, and HRMS systems.
-
-📱 Mobile-First Design: Responsive UI with offline capabilities for low-connectivity areas.
-
-Technology Stack
-
-Core Platform: Salesforce Lightning Platform
-
-UI: Lightning Web Components (LWC) & Experience Cloud
-
-Backend Logic: Apex (Triggers, Schedulable, Asynchronous)
-
-Automation: Salesforce Flow & Approval Processes
-
-Analytics: Tableau CRM / Einstein Analytics
-
-DevOps: Salesforce DX, VS Code, Git & GitHub
-
-Getting Started
-
-Follow these instructions to get a copy of the project up and running in your Salesforce environment.
-
-Prerequisites
-
-Salesforce CLI
-
-Visual Studio Code with Salesforce Extension Pack
-
-Salesforce Developer Edition Org or Sandbox
-
-Installation
-
-Clone the repository:
-
+### Installation
+1. Clone the repository:  
+```bash
 git clone https://github.com/your-username/erm-hybrid-workforce.git
 cd erm-hybrid-workforce
-
-
 Authorize your Salesforce Org:
 
+bash
+Copy code
 sfdx auth:web:login --setalias my-dev-org --instanceurl https://login.salesforce.com
-
-
 Deploy the source code to your org:
 
+bash
+Copy code
 sfdx force:source:deploy --targetusername my-dev-org --sourcepath force-app
-
-
 Assign Permission Sets:
 
+bash
+Copy code
 sfdx force:user:permset:assign --targetusername my-dev-org --permsetname Employee
-
-
-(Note: Permission set names are examples and can be defined during development.)
+sfdx force:user:permset:assign --targetusername my-dev-org --permsetname Manager
+(Note: Permission set names are examples and will be defined during development.)
 
 Repository Structure
-force-app/
-├─ main/
-│  ├─ default/
-│     ├─ classes/          # Apex classes
-│     ├─ triggers/         # Apex triggers
-│     ├─ lwc/              # Lightning Web Components
-│     ├─ objects/          # Custom objects
-│     ├─ workflows/        # Flows & automation
-│     └─ dashboards/       # Tableau CRM / Analytics dashboards
-
+bash
+Copy code
+erm-hybrid-workforce/
+│
+├── force-app/                   # Salesforce source files
+├── config/                      # Project configuration files
+├── scripts/                     # Deployment & automation scripts
+├── docs/                        # Documentation & diagrams
+└── README.md                    # Project overview
 Project Context
-
-This project is being developed as part of the TCS SmartBridge program. It serves as a practical application of Salesforce development and architecture skills to address modern workforce management challenges in organizations adopting hybrid and remote work models.
+This project is developed as part of the TCS SmartBridge program. It serves as a practical application of Salesforce CRM development, automation, and analytics to solve a real-world workforce management challenge, focusing on hybrid and remote employee engagement and productivity.
