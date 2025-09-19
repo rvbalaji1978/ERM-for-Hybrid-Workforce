@@ -69,8 +69,28 @@ Follow these instructions to get a copy of the project running in your Salesforc
 - Visual Studio Code with Salesforce Extension Pack  
 - Salesforce Developer Edition Org or Sandbox  
 
-### Installation
+## Installation
 1. Clone the repository:  
 ```bash
 git clone https://github.com/your-username/erm-hybrid-workforce.git
 cd erm-hybrid-workforce
+```
+2. Authorize your Salesforce Org:
+```bash
+sfdx auth:web:login --setalias my-dev-org --instanceurl https://login.salesforce.com
+```
+3. Deploy the source code to your org:
+```bash
+sfdx force:source:deploy --targetusername my-dev-org --sourcepath force-app
+```
+4. Assign Permission Sets:
+```bash
+sfdx force:user:permset:assign --targetusername my-dev-org --permsetname Employee
+sfdx force:user:permset:assign --targetusername my-dev-org --permsetname Manager
+```
+(Note: Permission set names are examples and will be defined during development.)
+
+## Project Context
+
+This project is developed as part of the TCS SmartBridge program. It serves as a practical application of Salesforce CRM development, automation, and analytics to solve a real-world workforce management challenge, focusing on hybrid and remote employee engagement and productivity.
+
