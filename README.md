@@ -69,30 +69,30 @@ Follow these instructions to get a copy of the project running in your Salesforc
 
 ### Installation
 1. Clone the repository:  
-```bash
+
 git clone https://github.com/your-username/erm-hybrid-workforce.git
 cd erm-hybrid-workforce
 Authorize your Salesforce Org:
 
 bash
-Copy code
+
 sfdx auth:web:login --setalias my-dev-org --instanceurl https://login.salesforce.com
 Deploy the source code to your org:
 
 bash
-Copy code
+
 sfdx force:source:deploy --targetusername my-dev-org --sourcepath force-app
 Assign Permission Sets:
 
 bash
-Copy code
+
 sfdx force:user:permset:assign --targetusername my-dev-org --permsetname Employee
 sfdx force:user:permset:assign --targetusername my-dev-org --permsetname Manager
 (Note: Permission set names are examples and will be defined during development.)
 
 Repository Structure
 bash
-Copy code
+
 erm-hybrid-workforce/
 │
 ├── force-app/                   # Salesforce source files
@@ -100,5 +100,6 @@ erm-hybrid-workforce/
 ├── scripts/                     # Deployment & automation scripts
 ├── docs/                        # Documentation & diagrams
 └── README.md                    # Project overview
+
 Project Context
 This project is developed as part of the TCS SmartBridge program. It serves as a practical application of Salesforce CRM development, automation, and analytics to solve a real-world workforce management challenge, focusing on hybrid and remote employee engagement and productivity.
