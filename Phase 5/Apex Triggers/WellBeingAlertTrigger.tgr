@@ -1,0 +1,10 @@
+trigger WellBeingAlertTrigger on Well_Being_Alert__c (after insert, after update) {
+
+    if (Trigger.isAfter) {
+        
+        if (Trigger.isInsert || Trigger.isUpdate) {
+            
+            WellBeingAlertHandler.alertManager(Trigger.new);
+        }
+    }
+}

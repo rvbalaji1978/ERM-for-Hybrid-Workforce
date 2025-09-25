@@ -1,0 +1,5 @@
+trigger AnalyticsMetricTriggerHandler on Analytics_Metric__c (after update) {
+    if (Trigger.isAfter) {
+        AnalyticsMetricTriggerHandler.notifyVerified(Trigger.new, Trigger.oldMap);
+    }
+}

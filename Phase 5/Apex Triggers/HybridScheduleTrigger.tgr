@@ -1,0 +1,11 @@
+trigger HybridScheduleTrigger on Hybrid_Schedule__c (before insert, before update, after insert, after update) {
+    HybridScheduleTriggerHandler handler = new HybridScheduleTriggerHandler();
+    if (Trigger.isBefore) {
+        if (Trigger.isInsert) handler.beforeInsert(Trigger.new);
+        if (Trigger.isUpdate) handler.beforeUpdate(Trigger.old, Trigger.new);
+    }
+    if (Trigger.isAfter) {
+        if (Trigger.isInsert) handler.afterInsert(Trigger.new);
+        if (Trigger.isUpdate) handler.afterUpdate(Trigger.old, Trigger.new);
+    }
+}
