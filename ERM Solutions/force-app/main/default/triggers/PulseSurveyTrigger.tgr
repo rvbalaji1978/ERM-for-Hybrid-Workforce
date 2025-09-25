@@ -1,0 +1,7 @@
+trigger PulseSurveyTrigger on Pulse_Survey__c (after insert, after update) {
+    PulseSurveyTriggerHandler handler = new PulseSurveyTriggerHandler();
+    if (Trigger.isAfter) {
+        if (Trigger.isInsert) handler.afterInsert(Trigger.new);
+        if (Trigger.isUpdate) handler.afterUpdate(Trigger.old, Trigger.new);
+    }
+}

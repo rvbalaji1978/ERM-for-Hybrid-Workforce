@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Critical Alerts">
+        <template for:each={alerts} for:item="alert">
+            <p key={alert.Id}>
+                {alert.Name} - {alert.Severity__c}
+                <lightning-button label="Acknowledge" 
+                                  onclick={handleAcknowledge} 
+                                  data-id={alert.Id}>
+                </lightning-button>
+            </p>
+        </template>
+    </lightning-card>
+</template>

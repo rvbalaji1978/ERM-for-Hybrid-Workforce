@@ -1,0 +1,7 @@
+<template>
+    <lightning-card title="Submit Survey">
+        <lightning-input label="Feedback" value={feedback} onchange={handleFeedback}></lightning-input>
+        <lightning-input label="Sentiment Score" type="number" value={score} onchange={handleScore}></lightning-input>
+        <lightning-button label="Submit" onclick={submitSurvey}></lightning-button>
+    </lightning-card>
+</template>
