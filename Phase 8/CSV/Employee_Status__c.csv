@@ -1,0 +1,3 @@
+Employee__c,Date__c,Start_Time__c,End_Time__c,Related_Schedule__c,Status__c,Work_Mode__c,Team_Manager__c
+005XXXXXXXXXXX,25-09-2025,09:00:00,17:00:00,a0BXXXXXXXXXXX,Active,Remote,005YYYYYYYYYYY
+005XXXXXXXXXXX,26-09-2025,10:00:00,18:00:00,a0BXXXXXXXXXXX,Inactive,Office,005YYYYYYYYYYY
