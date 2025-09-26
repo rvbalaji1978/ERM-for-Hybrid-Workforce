@@ -1,7 +1,7 @@
 # ERM for Hybrid Workforce 💼
 
 ![Built with Salesforce DX](https://img.shields.io/badge/Built%20with-Salesforce%20DX-orange)
-![Status In Development](https://img.shields.io/badge/Status-In%20Development-brightgreen)
+![Status Completed](https://img.shields.io/badge/Status-In%20Development-brightgreen)
 ![Program TCS SmartBridge](https://img.shields.io/badge/Program-TCS%20SmartBridge-purple)
 
 A Salesforce-powered ecosystem designed to **digitize employee engagement, streamline hybrid work management, and improve workforce productivity and retention**. This platform connects employees, managers, HR, and leadership to create a more efficient, data-driven, and employee-centric workplace.
