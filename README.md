@@ -1,4 +1,4 @@
-# ERM for Hybrid Workforce 💼
+# ERM for Hybrid Workforce 
 
 ![Built with Salesforce DX](https://img.shields.io/badge/Built%20with-Salesforce%20DX-orange)
 ![Status Completed](https://img.shields.io/badge/Status-In%20Development-brightgreen)
@@ -36,10 +36,10 @@ The **ERM for Hybrid Workforce** platform provides a Salesforce-based solution t
 ---
 
 ## Key Features (Phase 1)
-- 📝 **Real-Time Feedback Collection:** Pulse surveys with AI-driven sentiment analysis to identify engagement issues.  
-- 🔔 **Automated Alerts & Notifications:** Reminders for surveys, 1:1 meetings, and HR follow-ups.  
-- 📚 **Knowledge Base:** Central repository for policies, onboarding resources, and FAQs.  
-- 🤖 **Intelligent Automation:** Flows and triggers automate feedback analysis, notifications, and escalations.  
+-  **Real-Time Feedback Collection:** Pulse surveys with AI-driven sentiment analysis to identify engagement issues.  
+-  **Automated Alerts & Notifications:** Reminders for surveys, 1:1 meetings, and HR follow-ups.  
+-  **Knowledge Base:** Central repository for policies, onboarding resources, and FAQs.  
+-  **Intelligent Automation:** Flows and triggers automate feedback analysis, notifications, and escalations.  
 
 ---
 
